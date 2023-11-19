@@ -7,7 +7,7 @@ composer create-project laravel/laravel conveyancer-quote-project
 
 Set up your database setting in .env file
 
-To authorization functionality use below commands
+# To authorization functionality use below commands
 
 composer require laravel/ui
 php artisan ui vue --auth
@@ -15,10 +15,11 @@ npm install
 npm run dev
 
 
-To create access_tokens table use the below command
+# To create access_tokens table use the below command
+
 php artisan make:migration create_access_tokens_table
 
-In the database/migrations/create_access_tokens_table.php
+#In the database/migrations/create_access_tokens_table.php
 
 	public function up()
     {
@@ -33,14 +34,13 @@ In the database/migrations/create_access_tokens_table.php
 
 php artisan make:model AccessToken
 
-In the app/Models/AccessToken.php
-
+#In the app/Models/AccessToken.php
 
 protected $table = 'access_tokens';
 protected $fillable = ['access_token', 'user_id'];
 
 
-In the database/migrations/create_quotes_table.php
+#In the database/migrations/create_quotes_table.php
 
 	public function up()
     {
@@ -51,8 +51,6 @@ In the database/migrations/create_quotes_table.php
         });
     }
 
-To migrate database use below command
+# To migrate database use below command
 
 php artisan migrate
-
-
