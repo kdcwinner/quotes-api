@@ -52,6 +52,7 @@ In the database/migrations/create_quotes_table.php
     }
 
 To migrate database use below command
+
 php artisan migrate
 
 
