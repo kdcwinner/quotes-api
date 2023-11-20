@@ -10,7 +10,7 @@ composer create-project laravel/laravel conveyancer-quote-project
 composer install
 
 
-# rename .env-example file to .env
+# Rename .env-example file to .env
 
 # Set up your database setting in .env file
 
