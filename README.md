@@ -12,16 +12,6 @@ Set up your database setting in .env file
 
 composer install
 
-# To authorization functionality use below commands
-
-composer require laravel/ui
-
-php artisan ui vue --auth
-
-npm install 
-
-npm run dev
-
 
 # To create access_tokens table use the below command
 
