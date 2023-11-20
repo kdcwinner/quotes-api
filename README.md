@@ -1,4 +1,4 @@
-# quotes-api
+# Quotes-api
 This repository is used to get quotes.
 In this project there is a quotes table and all api quotes stores in that table. 
 
