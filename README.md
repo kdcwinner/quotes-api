@@ -10,8 +10,11 @@ Set up your database setting in .env file
 # To authorization functionality use below commands
 
 composer require laravel/ui
+
 php artisan ui vue --auth
+
 npm install 
+
 npm run dev
 
 
