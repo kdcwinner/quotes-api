@@ -24,13 +24,13 @@ class AuthController extends Controller
                     'password'=>Hash::make('123456')
                 ]);
             }
-            return response()->json(['status'=>true,'message'=>'5 uses created!'],200);
+            return response()->json(['status'=>true,'message'=>'5 users created!'],200);
         }catch(\Throwable $t){
             return response()->json(['status'=>false,'message'=>'Something went wrong try it again.']);
         }
      }
 
-     
+
     /**
      * Used for login user
      * @param User request
