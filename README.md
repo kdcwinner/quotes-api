@@ -39,11 +39,22 @@ Open postman and use below instructions
 
 http://localhost:8000/api/login
 
-send email and password as request, take email from users table and password as 123456
+send keys email and password as request, take email from users table and password as 123456
 
 as a response you will get access_token
 
 now open new tab of postman 
 
 http://localhost:8000/api/qoutes
+
+send request params 
+
+access_token key and access_token which got response from login api
+
+select Headers as Authorization and add value as access_token got from login api
+
+as a response you will get 5 different quotes
+
+
+
 
