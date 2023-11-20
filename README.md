@@ -32,3 +32,17 @@ php artisan serve
 # To create dummy users for testing use below
 
 http://localhost:8000/create-dummy-users
+
+# How to test quotes functionality
+
+Open postman and use below instructions
+
+http://localhost:8000/api/login
+
+send email and password as request, take email from users table and password as 123456
+
+as a response you will get access_token
+
+now open new tab of postman 
+
+http://localhost:8000/api/login

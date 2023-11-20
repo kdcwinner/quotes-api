@@ -22,8 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('login',[AuthController::class,'login'])->name('login');
-Route::get('qoutes',[QuoteController ::class,'getQuotes']);
 Route::group(['middleware'=>'auth.api'],function(){
-   // Route::get('qoutes',[QuoteController ::class,'getQuotes']);
+    Route::get('qoutes',[QuoteController ::class,'getQuotes']);
     Route::post('logout',[AuthController::class,'logout'])->name('logout');
 });
