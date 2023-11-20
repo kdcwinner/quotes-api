@@ -53,7 +53,7 @@ access_token key and access_token which got response from login api
 
 select Headers as Authorization and add value as access_token got from login api
 
-as a response you will get 5 different quotes
+as a response you will get 5 different quotes, you can check it in the quotes database table.
 
 
 
