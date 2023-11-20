@@ -25,7 +25,7 @@ DB_PASSWORD=<database_password>
 
 php artisan migrate
 
-# To start serve use below command
+# To start server use below command
 
 php artisan serve
 
