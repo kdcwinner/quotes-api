@@ -55,6 +55,11 @@ select Headers as Authorization and add value as access_token got from login api
 
 as a response you will get 5 different quotes, you can check it in the quotes database table.
 
+# To Testing code use below command
+
+php artisan test
+
+
 
 
 
