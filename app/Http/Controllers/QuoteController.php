@@ -19,7 +19,7 @@ class QuoteController extends Controller
         $data = [];
         $quote_count = 5;
         for($i=0;$i<$quote_count;$i++){
-            $quote  = self::callApi($this->endpoint,[]);
+            $quote  = json_decode(self::callApi($this->endpoint,[]));
             $data[] = $quote; 
             Quote::create(['quote'=>$quote]); 
         }
