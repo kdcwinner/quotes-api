@@ -7,6 +7,11 @@ composer create-project laravel/laravel conveyancer-quote-project
 
 Set up your database setting in .env file
 
+
+# To install laravel dependancy use below command
+
+composer install
+
 # To authorization functionality use below commands
 
 composer require laravel/ui
