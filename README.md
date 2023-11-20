@@ -45,4 +45,5 @@ as a response you will get access_token
 
 now open new tab of postman 
 
-http://localhost:8000/api/login
+http://localhost:8000/api/qoutes
+
