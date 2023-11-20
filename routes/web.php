@@ -17,8 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('create-dummy-users',[AuthController::class,'createUsers']);
-//Route::post('login',[AuthController::class,'login'])->name('login');
+Route::get('create-dummy-users',[AuthController::class,'createUsers']);
 
 Auth::routes();
 

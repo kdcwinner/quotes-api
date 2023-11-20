@@ -13,6 +13,25 @@ class AuthController extends Controller
 {
     
     /**
+     * used to create 5 dummy users for testing purpose
+     */
+    public function createUsers(Request $request){
+        try{
+            for($i=0;$i<5;$i++){
+                User::create([
+                    "name"=>"test",
+                    "email"=>rand().'@gmail.com',
+                    'password'=>Hash::make('123456')
+                ]);
+            }
+            return response()->json(['status'=>true,'message'=>'5 uses created!'],200);
+        }catch(\Throwable $t){
+            return response()->json(['status'=>false,'message'=>'Something went wrong try it again.']);
+        }
+     }
+
+     
+    /**
      * Used for login user
      * @param User request
      * @return json data
