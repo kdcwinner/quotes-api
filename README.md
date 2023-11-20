@@ -40,6 +40,7 @@ php artisan make:model AccessToken
 #In the app/Models/AccessToken.php
 
 protected $table = 'access_tokens';
+
 protected $fillable = ['access_token', 'user_id'];
 
 
