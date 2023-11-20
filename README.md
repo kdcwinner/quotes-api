@@ -23,3 +23,11 @@ DB_PASSWORD=<database_password>
 # To migrate database use below command
 
 php artisan migrate
+
+# To start serve use below command
+
+php artisan serve
+
+# To create dummy users for testing use below
+
+http://localhost:8000/create-dummy-users
